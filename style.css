@@ -30,6 +30,13 @@ div {
     background-color: rgb(148, 214, 239);
 }
 
+ul {
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    list-style-type: none;
+}
+
 .Container {
     display: flex;
 }
