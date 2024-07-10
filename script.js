@@ -1,6 +1,4 @@
 
-const toDoList = [];
-
 const ul = document.getElementById("To-Do-List");
 
 
@@ -21,6 +19,5 @@ function addElement(){
         //Add li to ul
         ul.appendChild(li);
 
-        toDoList.push(text);
     }
 }
