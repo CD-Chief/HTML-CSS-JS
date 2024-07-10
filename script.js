@@ -3,13 +3,6 @@ const toDoList = [];
 
 const ul = document.getElementById("To-Do-List");
 
-function generateList(){
-    toDoList.forEach(element => {
-        let li = document.createElement("li");
-        li.textContent = element;
-        ul.appendChild(li);
-    });
-}
 
 function addElement(){
     let text = document.getElementById("Element-Text").value;
