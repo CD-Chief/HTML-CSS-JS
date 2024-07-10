@@ -30,3 +30,13 @@ function addElement(){
 
     }
 }
+
+function deleteElement(){
+let ulItems = ul.querySelectorAll("li");
+
+    ulItems.forEach(function(item) {
+        if (item.classList.contains("Selected")) {
+            item.remove();
+        }
+    });
+}

@@ -46,8 +46,6 @@ li:hover {
     background-color: rgb(96, 96, 255);
 }
 
-
-
 button{
     cursor: pointer;
     color: white;
@@ -74,6 +72,7 @@ input[type="checkbox"] {
 
 .Container {
     display: flex;
+    background-color: white;
 }
 
 .Application {
@@ -89,6 +88,16 @@ input[type="checkbox"] {
 
 .Add {
     flex: 1;
+}
+
+#Delete-Container {
+    align-self: center;
+    background-color: white;
+
+}
+
+.Delete {
+    align-self: center;
 }
 
 
