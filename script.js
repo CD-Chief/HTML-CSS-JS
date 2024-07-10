@@ -13,6 +13,15 @@ function addElement(){
         let checkbox = document.createElement("input");
         checkbox.type = "checkbox";
 
+        //Add event listener
+        li.addEventListener("click", function() {
+            if (li.classList.contains("Selected")) {
+                li.classList.remove("Selected");
+            } else {
+                li.classList.add("Selected");
+            }
+        })
+
         //Add checbox to li
         li.appendChild(checkbox);
 
