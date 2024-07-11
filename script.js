@@ -14,11 +14,14 @@ function addElement(){
         checkbox.type = "checkbox";
 
         //Add event listener
-        li.addEventListener("click", function() {
-            if (li.classList.contains("Selected")) {
-                li.classList.remove("Selected");
-            } else {
-                li.classList.add("Selected");
+        li.addEventListener("click", function(event) {
+
+            if (event.target.type !== "checkbox") {
+                if (li.classList.contains("Selected")) {
+                    li.classList.remove("Selected");
+                } else {
+                    li.classList.add("Selected");
+                }
             }
         })
 
