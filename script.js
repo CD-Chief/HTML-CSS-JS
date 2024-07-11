@@ -35,7 +35,7 @@ function addElement(){
 }
 
 function deleteElement(){
-let ulItems = ul.querySelectorAll("li");
+    let ulItems = ul.querySelectorAll("li");
 
     ulItems.forEach(function(item) {
         if (item.classList.contains("Selected")) {
@@ -43,3 +43,32 @@ let ulItems = ul.querySelectorAll("li");
         }
     });
 }
+
+function editElement(){
+    let found = 0;
+    let ulItems = ul.querySelectorAll("li");
+
+    ulItems.forEach(function(item) {
+        if (item.classList.contains("Selected")) {
+            found += 1;
+        }
+    });
+
+    if (found == 0){
+        alert("Must select a task first!");
+    } else {
+        let userInput = prompt("Enter task to replace selected tasks:", "Enter Task...");
+        if (userInput !== null) {
+            ulItems.forEach(function(item) {
+                if (item.classList.contains("Selected")) {
+                    item.textContent = userInput;
+
+                    let checkbox = document.createElement("input");
+                    checkbox.type = "checkbox";
+
+                    item.appendChild(checkbox);
+                };
+            });
+        };
+    };
+};

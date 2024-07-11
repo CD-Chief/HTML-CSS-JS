@@ -102,9 +102,18 @@ input[type="checkbox"] {
     margin-bottom: 5px;
 }
 
-.Delete {
+.Delete, .Edit {
     align-self: center;
+    margin: 0px 5px;
 }
+
+.delete-edit {
+    display: flex;
+    flex: 1;
+    background-color: white;
+}
+
+
 
 
 
