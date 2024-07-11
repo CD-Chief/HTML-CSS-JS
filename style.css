@@ -90,10 +90,9 @@ input[type="checkbox"] {
     flex: 1;
 }
 
-#Delete-Container {
+.function {
     align-self: center;
     background-color: white;
-
 }
 
 .Delete {
