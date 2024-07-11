@@ -38,7 +38,10 @@ ul {
 }
 
 li:hover {
-    background-color: rgb(150, 150, 150);
+    transition: margin 0.5s ease, color 0.1s ease;
+
+    margin: 3px 0px;
+    color: rgb(59, 59, 216);
     cursor: pointer;
 }
 
@@ -52,10 +55,11 @@ button{
     background-color: rgba(43, 36, 253, 0.558);
     padding: 2px;
     border-radius: 10px; 
+    transition: background-color 0.5s ease;
 }
 
 button:hover {
-    background-color:  rgba(122, 132, 241, 0.829);
+    background-color:  rgba(163, 170, 243, 0.995);
 }
 
 input[type="text"] {
